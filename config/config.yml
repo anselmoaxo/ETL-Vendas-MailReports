@@ -1,2 +1,14 @@
 # config.yml
 
+
+gmail:
+  email: anselmo.cstecnologia@gmail.com
+  password: rifc zmrf zmie xcwe
+
+database:
+  dialect: postgresql  # substitua pelo seu banco de dados, ex: mysql, sqlite, etc.
+  username: postgres
+  password: postgres
+  host: localhost
+  port: 5432  # porta do banco de dados
+  database_name: anality_base
