@@ -5,4 +5,4 @@ venv
 *.sql
 *.xlsx
 *.db
-.yml
+*.yml
