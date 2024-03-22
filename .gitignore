@@ -6,3 +6,4 @@ venv
 *.xlsx
 *.db
 *.yml
+*config

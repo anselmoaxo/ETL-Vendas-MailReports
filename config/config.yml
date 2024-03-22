@@ -1,15 +1,12 @@
 # config.yml
-
-# config.yml
-
 gmail:
-  email: seu_email@gmail.com
-  password: sua_senha
+  email: anselmo.cstecnologia@gmail.com
+  password: rifc zmrf zmie xcwe
 
 database:
   dialect: postgresql  # substitua pelo seu banco de dados, ex: mysql, sqlite, etc.
-  username: seu_usuario
-  password: sua_senha
+  username: postgres
+  password: postgres
   host: localhost
   port: 5432  # porta do banco de dados
-  database_name: nome_do_banco
+  database_name: anality_base
