@@ -7,3 +7,4 @@ venv
 *.db
 *.yml
 *config
+config.yml

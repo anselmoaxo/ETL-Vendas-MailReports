@@ -3,7 +3,6 @@ from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 from email.mime.base import MIMEBase
 from email import encoders
-import yaml
 
 
 class EmailSender:
@@ -34,19 +33,3 @@ class EmailSender:
         self.server.sendmail(self.email, to_email, text)
         
         
-        with open('config/config.yml', 'r') as file:
-            config = yaml.safe_load(file)
-
-# Acessa as configurações do Gmail e do banco de dados
-        gmail_config = config['gmail']
-        email_1 = gmail_config['email']
-        senha = gmail_config['password']
-        email_sender = EmailSender(email_1, senha)
-        destinatario = 'aoliveira@cstecnologia.com.br'
-        assunto = 'Analise Ultimas Vendas'
-        corpo = 'Segue analise dos cliente com mais de 30 dias sem retornar a compra'
-
-            # Substitua 'caminho/do/anexo' pelo caminho do arquivo que você deseja anexar
-        caminho_do_anexo = 'data/output/vendas.xlsx'
-
-        email_sender.send_email(destinatario, assunto, corpo, caminho_do_anexo)
